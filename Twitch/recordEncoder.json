@@ -1,0 +1,6 @@
+{
+    "cqp": 21,
+    "gpu": 1,
+    "preset": "mq",
+    "rate_control": "CQP"
+}

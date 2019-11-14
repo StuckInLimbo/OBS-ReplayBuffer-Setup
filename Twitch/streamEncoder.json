@@ -1,0 +1,6 @@
+{
+    "bitrate": 6000,
+    "gpu": 1,
+    "keyint_sec": 2,
+    "preset": "mq"
+}
