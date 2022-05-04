@@ -18,14 +18,13 @@ The main advantage of using Replay Buffer over these other alternatives is that 
 - [Additional Information](#Additional-Information)
 
 # Installing OBS
-First, pick between [OBS Studio](https://obsproject.com/) and [StreamLabs OBS](https://streamlabs.com/).
-I prefer OBS for local recordings as there are less hiccups due to SLOBS stream features.
+Follow the instructions to install [OBS Studio](https://obsproject.com/).
 
 # Settings
 Here we'll go through all the settings necessary for both general recording and replay buffer.
 ## Output
 First, start with the **Recording** tab, we'll be skipping over the **Stream** tab for this tutorial.
-![](https://i.imgur.com/TGFwr03.png)
+![Output recording tab of OBS settings menu](https://i.imgur.com/TGFwr03.png)
 Set the **Output Mode** to Advanced.<BR>
 Leave **Type** on Standard.<BR>
 Set **Recording Path** to somewhere.<BR>
@@ -40,36 +39,36 @@ For **Rate Control**, select CQP and set it to 20-21 (Lower = better quality). T
 Leave **B-Frames** on 2, you generally shouldn't touch this unless you REALLY know what you're doing.<BR>
 
 Now, on the **Audio** tab, set all the tracks to be 160 for their bitrate.
-![](https://i.imgur.com/rb2QFhc.png)
+![Output audio tab of OBS settings menu](https://i.imgur.com/rb2QFhc.png)
 
 As for the **Replay Buffer** tab, check the box for enabling it.
-![](https://i.imgur.com/PIhUjsk.png)
+![Output replay buffer tab of OBS settings menu](https://i.imgur.com/PIhUjsk.png)
 Set **Maximum Replay Time** to whatever you desire. Try to keep this somewhere from 30s to 4m (240s). Anything longer and you're better off with a normal recording.<BR>
 Set **Maximum Memory** from 1GB (1024MB) to 4GB (4096) depending on how long your buffer is, and your rate control.
 
 ## Audio
 As for the **Audio** section in settings, there is very little to configure here.
-![](https://i.imgur.com/rglgF5U.png)
+![Audio tab of OBS settings menu](https://i.imgur.com/rglgF5U.png)
 Set **Sample Rate** to 44.1KHz, unless ALL *OTHER AUDIO DEVICES* are 48KHz.<BR>
 Set **Devices** as necessary, disable devices you do not actively use.<BR>
 Everything else is fine as default.
 
 ## Video
 Now in the **Video** category in settings, there's only a few options but they are the most important.
-![](https://i.imgur.com/5PCxy6K.png)
+![Video tab of OBS settings menu](https://i.imgur.com/5PCxy6K.png)
 **Base Canvas Resolution** should be set to your native res.<BR>
 **Output (Scaled) Resolution** should be set to your native res.<BR>
 **Downscale Filter** can be anything, since we aren't descaling. For performance reasons, set this to *bicubic*.
 
 ## Hotkeys
 In order to use **Replay Buffer**, there's only one option that is necessary here.
-![](https://i.imgur.com/gkyfZ6G.png)
+![Hotkeys tab of OBS settings menu](https://i.imgur.com/gkyfZ6G.png)
 You **must** set a hotkey for **Save Replay** under **Replay Buffer**.<BR>
 You can set hotkeys for **Start Replay Buffer** and **Stop Replay Buffer**, but they are unnecessary as you can start and stop it from the UI.
 
 # Using Replay Buffer
 Once you have the **Scene** selected you want to record, simply start the replay buffer with the **Start Replay Buffer** button in the bottom right of the main UI.
-<BR>![](https://i.imgur.com/9T5HCch.png)<BR>
+<BR>![Recording control cluster of OBS main menu](https://i.imgur.com/9T5HCch.png)<BR>
 You can stop the replay buffer with the **Stop Replay Buffer** button once it is active.
 
 Press the **Save Replay** hotkey anytime you want to save your buffer of **Maximum Replay Time**.
